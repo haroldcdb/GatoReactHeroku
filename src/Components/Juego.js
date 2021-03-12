@@ -73,6 +73,7 @@ const Juego = () => {
           <div>{estatus}</div>
           <ol>{movimientos}</ol>
         </div>
+        <div>Hola mundo</div>
       </div>
     );
   
