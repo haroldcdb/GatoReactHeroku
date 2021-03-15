@@ -9,10 +9,11 @@ import Juego from "./Components/Juego";
 
 const protocol = window.location.protocol;
 const location = window.location.hostname;
+
 if (location.includes('localhost')) {
   window.apiDomain = protocol + '//localhost:3030';
   window.publicDomain = protocol +'//localhost:3000';
-} else if (location.includes('dev')) {
+} else if (location.includes('dev.herokuapp')) {
   window.apiDomain = protocol + '//gato-backend-dev.herokuapp.com';
   window.publicDomain = protocol + '//gato-react-heroku-dev.herokuapp.com';
 } else {
